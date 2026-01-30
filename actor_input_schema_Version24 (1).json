@@ -1,0 +1,30 @@
+{
+  "title": "Input schema of the Venture Capital Portfolio Tracker scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "Seed URLs to start crawling from (VC portfolio pages, firm homepages, directories).",
+      "editor": "requestListSources",
+      "prefill": [
+        {
+          "url": "https://angel.co/companies"
+        }
+      ]
+    },
+    "maxRequestsPerCrawl": {
+      "title": "Max Requests per Crawl",
+      "type": "integer",
+      "description": "Maximum number of requests that can be made by this crawler.",
+      "default": 200
+    },
+    "followInternalOnly": {
+      "title": "Follow internal links only",
+      "type": "boolean",
+      "description": "If true, only follow links within the same host as each start URL (helps stay within firm domains).",
+      "default": true
+    }
+  }
+}

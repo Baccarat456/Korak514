@@ -1,0 +1,27 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": ["vc_firm", "portfolio_company", "company_url", "industry", "stage", "investment_date", "amount", "description", "tags", "source_url"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "vc_firm": { "label": "VC Firm", "format": "text" },
+          "portfolio_company": { "label": "Company", "format": "text" },
+          "company_url": { "label": "Company URL", "format": "link" },
+          "industry": { "label": "Industry", "format": "text" },
+          "stage": { "label": "Stage", "format": "text" },
+          "investment_date": { "label": "Investment date", "format": "text" },
+          "amount": { "label": "Amount", "format": "text" },
+          "description": { "label": "Description", "format": "text" },
+          "tags": { "label": "Tags", "format": "text" },
+          "source_url": { "label": "Source URL", "format": "link" }
+        }
+      }
+    }
+  }
+}
